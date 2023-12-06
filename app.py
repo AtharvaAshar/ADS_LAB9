@@ -12,7 +12,7 @@ import tensorflow as tf
 import pandas as pd
 import numpy as np
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
 df = pd.read_csv("SPAM text message 20170820 - Data (1).csv")
 model = tf.keras.models.load_model("Mymodel.h5")
